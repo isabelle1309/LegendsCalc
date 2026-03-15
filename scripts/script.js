@@ -109,7 +109,7 @@ function calculate(option) {
 
         inputEl.style.color = 'white';
 
-        if (value < 0 || value > 40){
+        if (value < 0 || value > 40) {
             alert("A score is less than 0 or more than 40.")
             inputEl.style.color = 'red';
         }
@@ -127,7 +127,8 @@ function calculate(option) {
     }
 
     if (option) {
-        const averageMinus = Math.floor(minusint / (8 - emptycount));
+        const divisor = 8 - emptycount;
+        const averageMinus = divisor > 0 ? Math.floor(minusint / divisor) : 0;
 
         for (let index = 2; index <= 16; index += 2) {
             const inputEl = query(`#score${index}`);
