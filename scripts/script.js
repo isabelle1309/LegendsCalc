@@ -16,7 +16,7 @@ plus.style.left = '40.4vw';
 plus.style.textAlign = 'right';
 plus.style.fontSize = '166%';
 plus.style.width = '4vw';
-plus.textContent = '0';
+plus.textContent = '+0';
 const minus = document.createElement("p");
 minus.id = 'minusid';
 minus.style.position = 'fixed';
@@ -26,7 +26,7 @@ minus.style.left = '89.4vw';
 minus.style.textAlign = 'right';
 minus.style.fontSize = '166%';
 minus.style.width = '4vw';
-minus.textContent = '0';
+minus.textContent = '-0';
 const calc = document.createElement("p");
 calc.id = 'calcid';
 calc.style.position = 'fixed';
@@ -144,6 +144,6 @@ function calculate(option) {
     }
 
     query("#calcid").textContent = calcint;
-    query("#plusid").textContent = plusint;
-    query("#minusid").textContent = minusint;
+    query("#plusid").textContent = `+${plusint}`;
+    query("#minusid").textContent = `-${minusint}`;
 }

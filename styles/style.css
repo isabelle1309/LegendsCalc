@@ -29,6 +29,7 @@ body * {
 	margin-left: 39.5vw;
 	margin-top: 1.1vw;
 	padding: 0.2vh 0.81vw;
+	cursor: pointer;
 }
 
 #scoreform {
